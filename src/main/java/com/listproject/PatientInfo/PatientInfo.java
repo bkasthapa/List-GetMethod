@@ -1,15 +1,20 @@
-package com.listproject.PatientInfo;
+package com.listproject.patientinfo;
 
 public class PatientInfo {
 
-	
+	private String id;
 	private String name;
 	private String address;
 	private String age;
 	private String doB;
 
-	
-	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -35,13 +40,12 @@ public class PatientInfo {
 		this.age = age;
 	}
 
-	public String getdoB() {
+	public String getDoB() {
 		return doB;
 	}
 
-	public void setdOB(String doB) {
+	public void setDoB(String doB) {
 		this.doB = doB;
 	}
 
-	
 }

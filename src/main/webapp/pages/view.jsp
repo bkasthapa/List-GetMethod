@@ -4,20 +4,22 @@
 
 <table border="2" width="70%" cellpadding="2">
 	<tr>
-		
+		<th>Id</th>
 		<th>Name</th>
 		<th>Address</th>
 		<th>Age</th>
-		<th>DOB</th>
+		
+		<th>Edit</th>
 	</tr>
 	
 	<c:forEach var="ward" items="${list}">
 		<tr>
-			
+			<td>${ward.id}</td>
 			<td>${ward.name}</td>
 			<td>${ward.address}</td>
 			<td>${ward.age}</td>
-			<td>${ward.doB}</td>
+			
+			<td><a href="editpage?id=${ward.id}">Edit</a></td>
 
 
 		</tr>
